@@ -1,4 +1,5 @@
- 
+##  New version of EAF had released, download now to get new experience!
+
 ## What is EAF?
 EAF is a GUI tool of ADB (Android Debug Bridge) and fastboot based on Electron.
 
@@ -16,4 +17,4 @@ EAF is only a GUI, so any device that has ADB or fastboot commands is supported.
 
 All of these operations above can be done with mouses without typing commands!
 
-[Click me](https://ryantsui1109.github.io/eaf_web_en/docs) to read the documents
+[Click me](https://ryantsui1109.github.io/eaf_web/en/docs) to read the documents

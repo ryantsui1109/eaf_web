@@ -1,3 +1,9 @@
+---
+description: 一個圖形化的ADB和fastboot工具
+---
+
+
+
 ## EAF全新改版登場啦~~，立即下載體驗全新界面
 
 
@@ -18,4 +24,4 @@ EAF只是圖形界面，任何支援adb或fastboot指令的裝置皆可使用
 
 有了EAF，以上功能皆可用滑鼠操作實現~
 
-[戳我](https://ryantsui1109.github.io/eaf_web_zh/docs)查看說明文件
+[戳我](https://ryantsui1109.github.io/eaf_web/zh/docs)查看說明文件
