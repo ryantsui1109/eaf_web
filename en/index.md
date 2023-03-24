@@ -1,3 +1,5 @@
+*PS: The download button shows “ZIP” file, but it actually will be “setup.exe”, please don't worry about that*
+
 ##  New version of EAF had released, download now to get new experience!
 
 ## What is EAF?

@@ -2,7 +2,7 @@
 description: 一個圖形化的ADB和fastboot工具
 ---
 
-
+*備註：下載按鈕顯示為ZIP，實際上檔名為 setup.exe，請放心下載*
 
 ## EAF全新改版登場啦~~，立即下載體驗全新界面
 
