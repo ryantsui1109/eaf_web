@@ -1,26 +1,81 @@
----
-description: 一個圖形化的ADB和fastboot工具
----
+# Easy ADB and fastboot (EAF)
 
-## EAF全新改版登場啦~~，立即下載體驗全新界面
+## EAF 是什麼
 
+EAF 是一個圖形化的 ADB 和 fastboot 管理器
 
-## EAF是什麼？
-EAF是基於Electron打造的圖形化ADB和fastboot工具
+## EAF 的功能
 
-## EAF支援哪些裝置？
-EAF只是圖形界面，任何支援adb或fastboot指令的裝置皆可使用
+- 常用的 adb 和 fastboot 指令
+- 電源管理，包括重啓到系統、recovery 或 fastboot 模式
+- 刷入和擦除分區
+- fastboot oem 和 fastboot flashing 指令
+- 取得 fastboot 中儲存的變數
+- 切換AB槽
+- 使用電腦安裝可刷入的 zip
+- 現在支援多裝置，一鍵 root 10 台手機不再是夢～
 
-## EAF的功能
-- 常見ADB和fastboot指令
-- 電源管理（重啟到系統、還原、bootloader等模式）
-- 刷入、清除分區
-- 執行flashing、oem指令
-- 取得fastboot變數
-- 切換A、B槽
-- 用PC給手機安裝zip
-- 多裝置支援，一次刷10台手機不再是夢～
+## 截圖
 
-有了EAF，以上功能皆可用滑鼠操作實現~
+![fastboot getvar function](../readme-imgs/fastboot_get_var.png)
+![device manager](../readme-imgs/devices.png)
+![output by groups](../readme-imgs/multiple_devices.png)
 
-[戳我](https://ryantsui1109.github.io/eaf_web/zh/docs)查看說明文件
+## 支援的平台
+
+目前官方發佈 Linux 和 Windows 版，~~macOS 用戶請自行編譯~~
+
+## 安裝與更新
+
+### 安裝
+
+從 [Releases](https://github.com/ryantsui1109/Easy_ADB_fastboot/releases) 頁面下載, 或從我們的 [網站](https://ryantsui1109.github.io/eaf_web/en)
+
+#### Windows
+
+雙擊 exe 檔案安裝
+
+#### Linux
+
+解壓縮下載到的tar.xz, 並執行 `easy_adb_fastboot`
+
+### Update
+
+#### Windows
+
+- 每隔數天將自動檢查更新，可以在設定中變更
+- 或手動檢查更新
+
+#### Linux
+
+目前不支援，請自行下載新版
+
+## 從原始碼構建
+
+1. 克隆原始碼
+1. 安裝 Node.js 和 npm
+1. 安裝依賴
+
+   ```console
+   $ npm install
+   ```
+
+1. 下載 platform-tools
+
+   ```console
+
+   $ node scripts/eaf_builder.js -d #僅支援 Windows 和 Linux，macOS 請自行下載
+   ```
+
+1. 配置 
+   ```console
+   $ node scripts/eaf_builder.js -i=<index> -c=<channel> #index 爲一數字，channel 爲一字串
+   ```
+1. 建置 EAF
+   ```console
+   $ npm run build #此爲本地建置
+   ```
+   或
+   ```console
+   $ npm run publish #編譯並上傳到發行伺服器（需爲 electron-builder 支援者）
+   ```

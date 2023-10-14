@@ -1,12 +1,11 @@
-##  New version of EAF had released, download now to get new experience!
+# Easy ADB and fastboot (EAF)
 
-## What is EAF?
+## What is EAF
+
 EAF is a graphical manager of ADB (Android Debug Bridge) and fastboot.
 
-## Which devices does EAF support?
-EAF is only a GUI, so any device that has ADB or fastboot commands is supported.
-
 ## Features of EAF
+
 - Commonly used ADB and fastboot commands
 - Power management (reboot to system, recovery, bootloader ,etc.)
 - Flash/erase partition
@@ -16,6 +15,67 @@ EAF is only a GUI, so any device that has ADB or fastboot commands is supported.
 - Flash zips using PC
 - You can now opreate multiple devices at the same time, imagine that rooting 10 phones with one click!
 
-All of these operations above can be done with mouses without typing commands!
+## Screenshot(s)
 
-[Click me](https://ryantsui1109.github.io/eaf_web/en/docs) to read the documents
+![fastboot getvar function](../readme-imgs/fastboot_get_var.png)
+![device manager](../readme-imgs/devices.png)
+![output by groups](../readme-imgs/multiple_devices.png)
+
+## Supported platforms
+
+Linux and Windows are officially supported, ~~for MacOS users, you can build it by yourself.~~
+
+## Install & Update
+
+### Install
+
+Download release files from [Releases](https://github.com/ryantsui1109/Easy_ADB_fastboot/releases) page, or from our [Website](https://ryantsui1109.github.io/eaf_web/en)
+
+#### Windows
+
+Please double click the exec file to install.
+
+#### Linux
+
+Extract the tar.xz, and excute `easy_adb_fastboot` which should be inside the folder.
+
+### Update
+
+#### Windows
+
+- Updates will be checked every few days, you can set it in the settings page.
+- or you can check it manually
+
+#### Linux
+
+Currently not supported, download manually from the links above.
+
+## Building from source (For both platforms)
+
+1. Clone this repository
+1. Install Node.js and npm
+1. Install dependencies
+
+   ```console
+   $ npm install
+   ```
+
+1. Download platform-tools
+
+   ```console
+
+   $ node scripts/eaf_builder.js -d #Windows and Linux only, for mac users, please download manually from Google's site
+   ```
+
+1. Configure EAF
+   ```console
+   $ node scripts/eaf_builder.js -i=<index> -c=<channel> #index should be a number, and channel should be a string
+   ```
+1. Build EAF
+   ```console
+   $ npm run build #build locally
+   ```
+   or
+   ```console
+   $ npm run publish #build and upload release server (any releasing way that electron-build supports)
+   ```
