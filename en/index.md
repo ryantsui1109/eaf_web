@@ -43,8 +43,7 @@ Extract the tar.xz, and excute `easy_adb_fastboot` which should be inside the fo
 
 #### Windows
 
-- Updates will be checked every few days, you can set it in the settings page.
-- or you can check it manually
+Updates will be checked every few days, you can set it in the settings page, or you can check it manually
 
 #### Linux
 
