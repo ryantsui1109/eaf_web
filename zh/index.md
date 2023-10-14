@@ -11,7 +11,7 @@ EAF 是一個圖形化的 ADB 和 fastboot 管理器
 - 刷入和擦除分區
 - fastboot oem 和 fastboot flashing 指令
 - 取得 fastboot 中儲存的變數
-- 切換AB槽
+- 切換 AB 槽
 - 使用電腦安裝可刷入的 zip
 - 現在支援多裝置，一鍵 root 10 台手機不再是夢～
 
@@ -37,7 +37,7 @@ EAF 是一個圖形化的 ADB 和 fastboot 管理器
 
 #### Linux
 
-解壓縮下載到的tar.xz, 並執行 `easy_adb_fastboot`
+解壓縮下載到的 tar.xz, 並執行 `easy_adb_fastboot`
 
 ### Update
 
@@ -62,11 +62,10 @@ EAF 是一個圖形化的 ADB 和 fastboot 管理器
 1. 下載 platform-tools
 
    ```console
-
    $ node scripts/eaf_builder.js -d #僅支援 Windows 和 Linux，macOS 請自行下載
    ```
 
-1. 配置 
+1. 配置
    ```console
    $ node scripts/eaf_builder.js -i=<index> -c=<channel> #index 爲一數字，channel 爲一字串
    ```
